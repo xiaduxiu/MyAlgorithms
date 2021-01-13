@@ -12,7 +12,7 @@ public class ShellSort {
     public static int[] sort(int[] arr) {
         int grap = 1;
         while (grap < arr.length) {
-            grap = grap * 3 +1;
+            grap = grap * 2 +1;
         }
 
         while (grap > 0) {
@@ -25,7 +25,7 @@ public class ShellSort {
                 }
                 arr[j+grap] = temp;
             }
-            grap = (int) Math.floor(grap / 3);
+            grap = (int) Math.floor(grap / 2);
         }
         return arr;
     }
